@@ -30,6 +30,7 @@
         "files": [
             "app/Helpers/GeneralHelper.php",
             "app/Helpers/HtmlHelper.php",
+            "app/Helpers/ModelHelper.php",
             "app/Helpers/LocaleHelper.php",
             "app/Helpers/SystemHelper.php",
             "app/Helpers/TimezoneHelper.php",
