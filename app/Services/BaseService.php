@@ -410,4 +410,17 @@ abstract class BaseService
 
         return $models;
     }
+
+    /**
+     * @param $model
+     * @param $data
+     *
+     * @return Model
+     */
+    public function updateModel($model, $data): Model
+    {
+        $model->update($data);
+
+        return $model;
+    }
 }

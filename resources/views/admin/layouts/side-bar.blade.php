@@ -13,7 +13,7 @@
 
     <!-- Nav Item - Dashboard -->
     <li class="nav-item active">
-        <a class="nav-link" href="index.html">
+        <a class="nav-link" href="{{ route('admin.index') }}">
             <i class="fas fa-fw fa-tachometer-alt"></i>
             <span>Dashboard</span></a>
     </li>
@@ -28,9 +28,9 @@
 
     <!-- Nav Item - Component -->
     <li class="nav-item">
-        <a class="nav-link" href="index.html">
+        <a class="nav-link" href="{{ route(ROUTE_BRAND['INDEX']) }}">
             <i class="fas fa-fw fa-tachometer-alt"></i>
-            <span>Component</span></a>
+            <span>Brand</span></a>
     </li>
 
     <!-- Nav Item - Utilities -->
