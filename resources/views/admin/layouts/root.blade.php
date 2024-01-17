@@ -41,23 +41,7 @@
     </div>
     <!-- End of Page Wrapper -->
 
-    <!-- Scroll to Top Button-->
-    <a class="scroll-to-top rounded" href="#page-top">
-        <i class="fas fa-angle-up"></i>
-    </a>
-
 </body>
     @include('admin.layouts.scripts')
-
-    <script>
-        $(function () {
-            $("#accordionSidebar").on('click','li',function(){
-                // remove classname 'active' from all li who already has classname 'active'
-                $("#accordionSidebar li.active").removeClass("active");
-                // adding classname 'active' to current click li
-                $(this).addClass("active");
-            });
-        })
-    </script>
 </html>
 

@@ -3,10 +3,33 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
 <!-- query-v3.7.1 -->
-<script src="{{ asset('asset/js/jquery-v3.7.1.js') }}"></script>
+<script src="{{ asset('plugins/js/jquery-v3.7.1.js') }}"></script>
+<!-- Custom scripts for all pages -->
+<script src="{{ asset('plugins/js/sb-admin-2.min.js') }}"></script>
+<!-- Data picker -->
+<script src="{{ asset('plugins/js/bootstrap-datepicker.min.js') }}"></script>
+<script>
+    $.ajaxSetup({
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="_token"]').attr('content'),
+        }
+    });
 
-<!-- Custom scripts for all pages-->
-<script src="{{ asset('admin_asset/template/js/sb-admin-2.min.js') }}"></script>
+    $(function () {
+        $('.datepicker').datepicker({
+            format: 'dd/mm/yyyy',
+            autoclose: true
+        });
+    })
+</script>
+<!-- Common scripts -->
+<script src="{{ asset('common/js/script.js') }}"></script>
+<script src="{{ asset('common/js/common.js') }}" type="module"></script>
+<!-- Toastr scripts -->
+<script src="{{ asset('plugins/js/toastr.min.js') }}"></script>
+<!-- Sweetalert scripts -->
+<script src="{{ asset('plugins/js/sweetalert.min.js') }}"></script>
+@yield('scripts')
 
 
 
