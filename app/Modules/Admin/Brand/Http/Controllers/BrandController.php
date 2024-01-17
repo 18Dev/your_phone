@@ -69,7 +69,6 @@ class BrandController extends Controller
             : $this->responseFailed(message: __('response.failed.create', ['name' => 'brand']));
     }
 
-
     /**
      * @param BrandRequest $brandRequest
      * @param $brand

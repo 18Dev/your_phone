@@ -12,6 +12,8 @@
                class="d-none d-sm-inline-block btn btn-sm btn-success shadow-sm">Create brand</a>
         </div>
 
+        @include('admin.pages.brand.filter')
+
         <div id="list-brand">
             <table class="table table-bordered">
                 <thead>

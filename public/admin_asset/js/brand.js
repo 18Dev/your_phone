@@ -132,22 +132,36 @@ const BRAND = (function () {
         });
     };
 
+    modules.filter = function () {
+        let data = {
+            key_search: $("input[name='key_search']").val().trim()
+        };
+        $(document).find('.filter-brand').map((i, e) => {
+            data = {...data, [$(e).attr('name')]: $(e).val()};
+        });
+
+        return data;
+    };
+
     return modules;
 })(window.jQuery, window, document);
 
 $(document).ready(function () {
     $(`#handle-category`).on('submit', BRAND.handle);
 
-    // $(document).on('click', '#list-brand .pagination a', function (e) {
-    //     e.preventDefault();
-    //     PRODUCT.getList($(this).attr('href'), PRODUCT.filter());
-    // });
-
     $(document).on('click', '.update-status', function () {
         let id = $(this).attr('data-id');
         let status = $(this).attr('data-status');
         BRAND.updateStatus(id, {status});
     });
+
+    $(document).on('keyup', "input[name='key_search']", COMMON.debounce(function () {
+        BRAND.getList('/brand', BRAND.filter());
+    }, 500));
+
+    $(document).on('keyup, change', '.filter-brand', COMMON.debounce(function () {
+        BRAND.getList('/brand', BRAND.filter());
+    }, 500));
 
     $(document).on('click', '.delete-item', function () {
         COMMON.confirmDelete($(this).data('name'), () => {

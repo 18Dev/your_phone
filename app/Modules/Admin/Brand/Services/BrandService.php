@@ -26,9 +26,14 @@ class BrandService extends BaseService implements BrandInterface
         $this->media = $media;
     }
 
+    /**
+     * @param $request
+     *
+     * @return mixed
+     */
     public function search($request)
     {
-        return $this->paginate(PAGE_RECORD);
+        return $this->model::search($request)->paginate(PAGE_RECORD);
     }
 
     /**
