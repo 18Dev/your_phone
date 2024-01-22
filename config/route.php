@@ -8,3 +8,8 @@ if (!defined('ROUTE_BRAND')) define('ROUTE_BRAND', [
     'UPDATE' => 'brand.update',
     'SHOW' => 'brand.show',
 ]);
+if (!defined('ROUTE_ADMIN')) define('ROUTE_ADMIN', [
+    'SIGN_IN' => 'admin.sign-in',
+    'LOGIN' => 'admin.login',
+    'LOGOUT' => 'admin.logout',
+]);
