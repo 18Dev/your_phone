@@ -22,7 +22,8 @@ class DatabaseSeeder extends Seeder
         // ]);
 
         $this->call([
-            BrandSeeder::class
+            BrandSeeder::class,
+            AdminSeeder::class
         ]);
     }
 }
