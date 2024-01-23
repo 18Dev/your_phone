@@ -18,6 +18,11 @@ Route::middleware('auth:admin')->group(function () {
     includeFilesInFolder(__DIR__.'/admin/brand/');
 
     /**
+     * NAME: product.index | product.create | product.store | product.show | product.update | product.delete
+     */
+    includeFilesInFolder(__DIR__.'/admin/product/');
+
+    /**
      * NAME: admin.logout
      */
     Route::get('logout', function () {

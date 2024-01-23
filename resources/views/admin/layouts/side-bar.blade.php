@@ -18,19 +18,18 @@
             <span>Dashboard</span></a>
     </li>
 
-    <!-- Divider -->
-    <hr class="sidebar-divider">
-
-    <!-- Heading -->
-    <div class="sidebar-heading">
-        Interface
-    </div>
-
     <!-- Nav Item - Component -->
     <li class="nav-item">
         <a class="nav-link" href="{{ route(ROUTE_BRAND['INDEX']) }}">
             <i class="fas fa-fw fa-tachometer-alt"></i>
             <span>Brand</span></a>
+    </li>
+
+    <!-- Nav Item - Component -->
+    <li class="nav-item">
+        <a class="nav-link" href="#">
+            <i class="fas fa-fw fa-tachometer-alt"></i>
+            <span>Product</span></a>
     </li>
 
     <!-- Nav Item - Utilities -->
@@ -39,14 +38,6 @@
             <i class="fas fa-fw fa-tachometer-alt"></i>
             <span>Utilities</span></a>
     </li>
-
-    <!-- Divider -->
-    <hr class="sidebar-divider">
-
-    <!-- Heading -->
-    <div class="sidebar-heading">
-        Addons
-    </div>
 
     <!-- Nav Item - Pages Collapse Menu -->
     <li class="nav-item">
