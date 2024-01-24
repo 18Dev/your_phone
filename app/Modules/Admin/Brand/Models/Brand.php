@@ -2,12 +2,13 @@
 
 namespace App\Modules\Admin\Brand\Models;
 
-use App\Modules\Admin\Brand\tinyInteger;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
+
 use App\Modules\Admin\Brand\Traits\AttributeTrait;
 use App\Modules\Admin\Brand\Traits\RelationshipTrait;
 use App\Modules\Admin\Brand\Traits\ScopeTrait;
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\SoftDeletes;
+
 use Plank\Mediable\Mediable;
 
 /**

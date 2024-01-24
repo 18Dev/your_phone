@@ -3,14 +3,15 @@
 namespace App\Modules\Admin\Brand\Http\Controllers;
 
 use App\Http\Controllers\Controller;
-use App\Modules\Admin\Brand\Http\Requests\BrandRequest;
-use App\Modules\Admin\Brand\Interfaces\BrandInterface;
-use App\Modules\Admin\Brand\Models\Brand;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
+
+use App\Modules\Admin\Brand\Http\Requests\BrandRequest;
+use App\Modules\Admin\Brand\Interfaces\BrandInterface;
+use App\Modules\Admin\Brand\Models\Brand;
 
 /**
  * @BrandController
