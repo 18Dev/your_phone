@@ -2,12 +2,13 @@
 
 namespace App\Modules\Admin\Brand\Services;
 
-use App\Modules\Admin\Brand\Interfaces\BrandInterface;
-use App\Modules\Admin\Brand\Models\Brand;
-use App\Modules\Media\Interfaces\MediaInterface;
-use App\Services\BaseService;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
+
+use App\Modules\Admin\Brand\Interfaces\BrandInterface;
+use App\Modules\Media\Interfaces\MediaInterface;
+use App\Modules\Admin\Brand\Models\Brand;
+use App\Services\BaseService;
 
 /**
  * @BrandService

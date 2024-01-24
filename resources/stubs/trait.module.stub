@@ -1,0 +1,8 @@
+<?php
+
+namespace App\Modules\{{ path }}\Traits;
+
+trait {{ nameTrait }}Trait
+{
+
+}
