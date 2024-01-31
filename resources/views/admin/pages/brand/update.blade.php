@@ -39,5 +39,5 @@
 @endsection
 
 @section('scripts')
-    <script src="{{ asset('admin_asset/asset/js/brand.js') }}" type="module"></script>
+    <script src="{{ asset('admin_asset/js/brand.js') }}" type="module"></script>
 @endsection
