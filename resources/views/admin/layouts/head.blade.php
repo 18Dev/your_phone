@@ -19,5 +19,3 @@
 <link href="{{ asset('common/css/css.css') }}" rel="stylesheet">
 <!-- Toastr CSS -->
 <link href="{{ asset('plugins/css/toastr.min.css') }}" rel="stylesheet">
-
-
