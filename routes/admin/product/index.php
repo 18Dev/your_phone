@@ -1,13 +1,13 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Modules\Admin\Brand\Http\Controllers\BrandController;
+use App\Modules\Admin\Product\Http\Controllers\ProductController;
 
 Route::prefix('product')->name('product.')->group(function () {
-    Route::get('/', [BrandController::class, 'index'])->name('index');
-    Route::view('/create', BrandController::pathView.'create')->name('create');
-    Route::post('/create', [BrandController::class, 'store'])->name('store');
-    Route::get('/{product}/show', [BrandController::class, 'show'])->name('show');
-    Route::post('/{product}/update', [BrandController::class, 'update'])->name('update');
-    Route::delete('/{product}/delete', [BrandController::class, 'delete'])->name('delete');
+    Route::get('/', [ProductController::class, 'index'])->name('index');
+    Route::view('/create', ProductController::pathView.'create')->name('create');
+    Route::post('/create', [ProductController::class, 'store'])->name('store');
+    Route::get('/{product}/show', [ProductController::class, 'show'])->name('show');
+    Route::post('/{product}/update', [ProductController::class, 'update'])->name('update');
+    Route::delete('/{product}/delete', [ProductController::class, 'delete'])->name('delete');
 });
