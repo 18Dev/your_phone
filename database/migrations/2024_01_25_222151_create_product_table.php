@@ -16,20 +16,14 @@ return new class extends Migration
         Schema::create('products', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('slug')->unique();
+            $table->text('slug');
+
             $table->unsignedBigInteger('category_id');
             $table->unsignedBigInteger('brand_id');
+            // This is not a foreign key, this is the id of the product belonging to the tables
+            $table->unsignedBigInteger('product_id');
+
             $table->tinyInteger('status');
-            /**
-             * @Json
-             * Ex: {color: {red, black, ...}}
-             */
-            $table->text('color')->nullable();
-            /**
-             * @Json
-             * Ex: {option_1: {color: red, storage_capacity: 256GB, price: 18.000.000}, ...}
-             */
-            $table->text('price')->nullable();
             $table->timestamps();
             $table->softDeletes();
 

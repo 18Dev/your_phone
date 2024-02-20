@@ -15,7 +15,12 @@ use Plank\Mediable\Mediable;
 /**
  * @Product
  *
- * TODO attribute model
+ * @property string name
+ * @property text slug
+ * @property bigInteger category_id
+ * @property bigInteger brand_id
+ * @property bigInteger product_id
+ * @property tinyInteger status
  */
 class Product extends Model
 {
@@ -26,9 +31,16 @@ class Product extends Model
          RelationshipTrait,
          ScopeTrait;
 
-    protected $table = '';
+    protected $table = 'products';
 
-    protected $primaryKey = '';
+    protected $primaryKey = 'id';
 
-    protected $fillable = [];
+    protected $fillable = [
+        'name',
+        'slug',
+        'category_id',
+        'brand_id',
+        'product_id',
+        'status',
+    ];
 }

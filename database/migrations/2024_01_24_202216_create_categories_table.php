@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('name');
             $table->string('slug')->unique();
             // Get the table name of the corresponding product
-            $table->string('table_product_name');
+            $table->string('table_product_name')->nullable();
             $table->unsignedBigInteger('parent_id')->nullable();
             $table->timestamps();
             $table->softDeletes();

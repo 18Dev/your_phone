@@ -35,8 +35,6 @@ return new class extends Migration
             $table->string("cpu_speed")->nullable(); // Tốc độ CPU
             $table->string("gpu")->nullable(); // Chip đồ họa (GPU)
             // Bộ nhớ & Lưu trữ
-            $table->string("ram")->nullable(); // RAM
-            $table->string("storage_capacity")->nullable(); // Dung lượng lưu trữ
             $table->string("remaining_capacity_is_approx")->nullable(); // Dung lượng còn lại (khả dụng) khoảng
             $table->string("memory_stick")->nullable(); // Thẻ nhớ
             $table->string("phone_book")->nullable(); // Danh bạ
