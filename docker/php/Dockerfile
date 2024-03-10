@@ -32,6 +32,9 @@ RUN apt-get -y install --fix-missing \
     libonig-dev \
     libxml2-dev
 
+# Install PHP extensions
+RUN docker-php-ext-install zip
+
 # RUN echo "\e[1;33mInstall important docker dependencies\e[0m"
 # RUN docker-php-ext-install \
 #     exif \

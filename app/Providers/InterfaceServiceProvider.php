@@ -4,6 +4,8 @@ namespace App\Providers;
 
 use App\Modules\Admin\Brand\Interfaces\BrandInterface;
 use App\Modules\Admin\Brand\Services\BrandService;
+use App\Modules\Admin\Category\Interfaces\CategoryInterface;
+use App\Modules\Admin\Category\Services\CategoryService;
 use App\Modules\Admin\Product\Interfaces\ProductInterface;
 use App\Modules\Admin\Product\Services\ProductService;
 use App\Modules\Media\Interfaces\MediaInterface;
@@ -22,6 +24,7 @@ class InterfaceServiceProvider extends ServiceProvider
         $this->app->bind(BrandInterface::class, BrandService::class);
         $this->app->bind(MediaInterface::class, MediaService::class);
         $this->app->bind(ProductInterface::class, ProductService::class);
+        $this->app->bind(CategoryInterface::class, CategoryService::class);
     }
 
     /**

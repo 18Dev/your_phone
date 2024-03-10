@@ -35,8 +35,8 @@ if (!function_exists('generateSlug')) {
      *
      * @return string
      */
-    function generateSlug($data): string
+    function generateSlug($data, $separator = '-'): string
     {
-        return Str::slug($data . '-' . time());
+        return Str::slug($data . $separator . time(), $separator);
     }
 }

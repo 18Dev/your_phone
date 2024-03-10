@@ -24,7 +24,7 @@ return new class extends Migration
             // Camera sau
             $table->string("rear_camera_resolution")->nullable(); // Độ phân giải camera sau
             $table->text("film")->nullable(); // Quay phim
-            $table->boolean("flash_light")->nullable(); // Đèn flash
+            $table->string("flash_light")->nullable(); // Đèn flash
             $table->text("rear_camera_feature")->nullable(); // Tính năng camera sau
             // Camera trước
             $table->string("front_camera_resolution")->nullable(); // Độ phân giải camera trước
@@ -35,7 +35,6 @@ return new class extends Migration
             $table->string("cpu_speed")->nullable(); // Tốc độ CPU
             $table->string("gpu")->nullable(); // Chip đồ họa (GPU)
             // Bộ nhớ & Lưu trữ
-            $table->string("remaining_capacity_is_approx")->nullable(); // Dung lượng còn lại (khả dụng) khoảng
             $table->string("memory_stick")->nullable(); // Thẻ nhớ
             $table->string("phone_book")->nullable(); // Danh bạ
             // Kết nối
@@ -65,7 +64,7 @@ return new class extends Migration
             $table->string("material")->nullable(); // Chất liệu
             $table->string("size")->nullable(); // Kích thước
             $table->string("mass")->nullable(); // Khối lượng
-            $table->dateTime("launch_time")->nullable(); // Thời điểm ra mắt
+            $table->string("launch_time")->nullable(); // Thời điểm ra mắt
             $table->timestamps();
             $table->softDeletes();
         });

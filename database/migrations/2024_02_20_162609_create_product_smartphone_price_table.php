@@ -16,9 +16,9 @@ return new class extends Migration
         Schema::create('product_smartphone_price', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('smartphone_attr_id');
-
             $table->string("ram")->nullable(); // RAM
             $table->string("storage_capacity")->nullable(); // Dung lượng lưu trữ
+            $table->string("remaining_capacity_is_approx")->nullable(); // Dung lượng còn lại (khả dụng) khoảng
             $table->string('color'); // Màu sắc
             $table->string('price'); // Giá
             $table->bigInteger('quantity'); // Số lượng
